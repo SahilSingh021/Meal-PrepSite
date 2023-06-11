@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Handlee&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>My Chef | Sahil</title>
+</head>
+<body>
+    <div class="main_container">
+        <header>
+            <a href="/Index.html"><img src="images/page-logo.png" class="logo"></a>
+        </header>
+        <div class="main_div">
+            <div class="input_div">
+                <input id="recipe_search" type="search" placeholder="Find your meal..." autocomplete="off" maxlength="100" onkeyup="SearchRecipe(event);"/>
+                <i class="ri-search-line" onclick="SearchRecipe(event);"></i>
+            </div>
+            <div class="results_container">
+                <div id="results_div-id" class="results_div"></div>
+            </div>
+        </div>
+    </div>
+    <div class="result-view_container">
+        <div class="result-view_div">
+            <div class="result-header_container">
+                <div class="result-header_div">
+                    <div class="close-result-view-btn_div">
+                        <i class="ri-close-fill" onclick="CloseResultView();"></i>
+                    </div>
+                    <img class="result-header-image" src="" alt="Food Image.">
+                    <div class="result-header-text_div">
+                        <h1 class="result-header-text_h1"></h1>
+                        <p id="result-header-text_p1" class="result-header-text_p"><strong></strong></p>
+                        <p id="result-header-text_p2" class="result-header-text_p"><strong></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="result-body_container">
+                <div class="result-body_div">
+                    <div class="instructions_container">
+                        <div class="instructions_div">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="ingredients-table_div">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ingredients</th>
+                                    <th>Measurements</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="video_container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
